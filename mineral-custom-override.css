@@ -1,0 +1,8 @@
+/* Force white background and bold text in Mineral Balancing section */
+.mineral-white-bg, .mineral-white-bg * {
+    background: #fff !important;
+}
+.mineral-bold {
+    font-weight: bold !important;
+    color: #222 !important;
+}

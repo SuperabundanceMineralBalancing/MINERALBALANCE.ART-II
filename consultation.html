@@ -1,0 +1,89 @@
+        <script>
+        // Parallax scroll effect for Shamanuel image
+        (function() {
+            var shamanuelImg = document.getElementById('parallax-shamanuel');
+            var shamanuelContainer = shamanuelImg && shamanuelImg.parentElement;
+            if (!shamanuelImg || !shamanuelContainer) return;
+            function parallaxShamanuel() {
+                var rect = shamanuelContainer.getBoundingClientRect();
+                var windowHeight = window.innerHeight;
+                // Only animate if the image is in the viewport
+                if (rect.bottom > 0 && rect.top < windowHeight) {
+                    var scrollPercent = (windowHeight - rect.top) / (windowHeight + rect.height);
+                    var translateY = scrollPercent * 80; // Adjust for effect strength
+                    shamanuelImg.style.transform = 'translateY(' + translateY + 'px)';
+                }
+                requestAnimationFrame(parallaxShamanuel);
+            }
+            requestAnimationFrame(parallaxShamanuel);
+        })();
+        </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Superabundance Mineral Balancing Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="heart-to-heart.html">Heart-to-Heart</a></li>
+            <li><a href="index.html#home">About</a></li>
+            <li><a href="mineral-balancing.html#htma">Mineral Balancing</a></li>
+            <li><a href="lab-testing.html#lab-testing">Lab Testing</a></li>
+            <li><a href="consultation.html" class="active">Consultation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="home-fluid" id="consultation">
+            <div class="fade-in-section parallax-container" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; overflow: hidden; max-width: 100vw; height: 72vh; margin-top: -2.5rem;">
+                <img id="parallax-shamanuel" src="shamanuelII.png" alt="Shamanuel" style="width: 100vw; max-width: 100vw; height: 90vh; object-fit: cover; display: block; margin: 0 auto 0 0; position: absolute; top: 0; left: 0; will-change: transform; transition: transform 0.1s;" />
+            </div>
+            <div style="max-width: 700px; width: 100%; padding: 2.5rem 1.5rem 1.5rem 1.5rem; color: #222; font-size: 1.13rem; font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; text-align: left; margin: 2.5rem auto 0 auto; background: none; border-radius: 0; box-shadow: none;">
+                <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 1.1rem; background: none; border: none; box-shadow: none;">
+                    <img src="logoII.png" alt="Logo II" style="max-width: 288px; width: 96vw; height: auto; display: block; background: none; border-radius: 0; box-shadow: none; border: none; margin: 0 auto; padding: 0;" />
+                </div>
+                <h1 class="section-headline" style="font-family: 'Playfair Display', 'Montserrat', serif; color: #b48c5a; font-size: 2.2em; font-weight: 900; margin-bottom: 1.2em; margin-top: 1em; text-align: left; letter-spacing: 0.01em;">Personalized Guidance for Your Wellbeing</h1>
+                Your healing journey is unique, and your support should be too. Begin with a complimentary 45-minute consultation designed to understand your health history, current challenges, and long-term goals. This free-of-charge initial conversation gives us the opportunity to explore how targeted mineral support and botanical approaches can work together to restore balance, improve resilience, and support your overall vitality.<br><br>
+                Whether you’re just starting your journey to more vitality or looking to refine an existing protocol,- this call offers clarity, direction, and a grounded next step forward.<br><br>
+                <strong>Schedule your free-of-charge orientation session</strong>
+                            <br><br>
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1PpL7_1fI-6dLRwgkQQdxVlgcUYcK0MTlF5QzHDXr2GptfljDGwf7Yul2yRVTrLDwbJsezEdy3?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+                            <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+            <!-- Additional content can be added here if needed -->
+        </section>
+    </main>
+    <footer>
+                <p style="color: #000; display: flex; align-items: center; gap: 0.7em; justify-content: center;">
+                        &copy; 2026 Superabundance Mineral Balancing. All rights reserved.
+                        <a href="https://www.instagram.com/emanuelelischa/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; margin-left: 0.5em;">
+                                <svg width="20" height="20" viewBox="0 0 448 512" style="display:inline-block;vertical-align:middle;">
+                                    <radialGradient id="insta-gradient" cx="30%" cy="107%" r="150%" fx="10%" fy="100%">
+                                        <stop offset="0%" stop-color="#fdf497"/>
+                                        <stop offset="5%" stop-color="#fdf497"/>
+                                        <stop offset="45%" stop-color="#fd5949"/>
+                                        <stop offset="60%" stop-color="#d6249f"/>
+                                        <stop offset="90%" stop-color="#285AEB"/>
+                                    </radialGradient>
+                                    <path fill="url(#insta-gradient)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186.6c-39.6 0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.9C397.6 9.9 366.2 1.7 330.9 0 293.7-1.7 154.3-1.7 117.1 0 81.8 1.7 50.4 9.9 24.1 36.2 9.9 50.4 1.7 81.8 0 117.1c-1.7 37.2-1.7 176.6 0 213.8 1.7 35.3 9.9 66.7 36.2 92.9 26.2 26.2 57.6 34.4 92.9 36.2 37.2 1.7 176.6 1.7 213.8 0 35.3-1.7 66.7-9.9 92.9-36.2 26.2-26.2 34.4-57.6 36.2-92.9 1.7-37.2 1.7-176.6 0-213.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.5 11.7-99.5 9-132.3 9s-102.7 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.5-9-99.5-9-132.3s-2.6-102.7 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.5-11.7 99.5-9 132.3-9s102.7-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.5 9 99.5 9 132.3s2.6 102.7-9 132.3z"/>
+                                    <circle fill="#fff" cx="224.1" cy="255.9" r="71.7"/>
+                                    <circle fill="#fff" cx="382.4" cy="121.5" r="17.1"/>
+                                </svg>
+                        </a>
+                        <a href="mailto:emanuel@mineralbalance.art" style="display: inline-flex; align-items: center; margin-left: 0.3em;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;"><rect width="24" height="24" rx="6" fill="#b48c5a"/><path d="M6 8.5C6 7.67157 6.67157 7 7.5 7H16.5C17.3284 7 18 7.67157 18 8.5V15.5C18 16.3284 17.3284 17 16.5 17H7.5C6.67157 17 6 16.3284 6 15.5V8.5ZM7.5 8.5L12 12.25L16.5 8.5H7.5ZM7.5 9.75V15.5H16.5V9.75L12 13.5L7.5 9.75Z" fill="white"/></svg>
+                        </a>
+                </p>
+    </footer>
+</body>
+</html>
