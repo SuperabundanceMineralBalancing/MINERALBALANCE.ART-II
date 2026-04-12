@@ -1,0 +1,7 @@
+/* Ensures white background in Mineral Balancing section and prevents darkening on scroll */
+html, body, main, .home-content, .home-bio-text, section, div, p, h1, h2, h3, ul, li {
+    background: #fff !important;
+}
+body {
+    background: #fff !important;
+}
