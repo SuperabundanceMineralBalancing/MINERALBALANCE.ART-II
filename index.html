@@ -214,37 +214,7 @@
                     </a>
                 </p>
     </main>
-    <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        (function() {
-            if (window.emailjs) emailjs.init("YOUR_PUBLIC_KEY");
-        })();
-        const form = document.getElementById("contact-form");
-        const statusDiv = document.getElementById("status");
-        if (form) {
-            form.addEventListener("submit", function(e) {
-                e.preventDefault();
-                const captcha = window.grecaptcha ? grecaptcha.getResponse() : null;
-                if (!captcha) {
-                    statusDiv.innerHTML = "Please verify that you are not a robot.";
-                    statusDiv.className = "status error";
-                    return;
-                }
-                emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-                    .then(() => {
-                        statusDiv.innerHTML = "Message sent successfully ✨";
-                        statusDiv.className = "status success";
-                        form.reset();
-                        if (window.grecaptcha) grecaptcha.reset();
-                    }, (error) => {
-                        statusDiv.innerHTML = "Something went wrong. Please try again.";
-                        statusDiv.className = "status error";
-                    });
-            });
-        }
+
     </script>
     </footer>
 
